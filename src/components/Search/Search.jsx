@@ -23,7 +23,7 @@ function Search() {
           />
         </div>
         <div className={styles.lowerSearch}>
-          <button>SEARCH</button>
+          <button className={styles.searchButton}>SEARCH</button>
           <div className={styles.account}>
           <FontAwesomeIcon icon={faUserLarge} />
           Account 

@@ -15,7 +15,8 @@
 }
 
 .search{
-    border: 1px solid black;
+    border: 1px solid #a3a3a6;
+    border-radius: 3px;
     display: flex;
     align-items: center;
     margin-left: 10px;
@@ -27,14 +28,55 @@
     border: none;
     height: 25px;
     width: 100%;
+    background: transparent;
+    color: white;
 }
 
 .faMagnifyingGlass{
     /* background-color: yellow; */
     padding: 3px;
+    color: #a3a3a6;
 }
 
 .lowerSearch{
     display: flex;
     flex-direction: row;
+}
+
+.searchButton{
+    background-color: #f68b1e;
+    border: none;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+}
+
+.account{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.help{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: blue;
+    padding: 5px;
+    margin: 5px;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: greenyellow;
+    padding: 10px;
 }
