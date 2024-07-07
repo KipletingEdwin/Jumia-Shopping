@@ -1,9 +1,14 @@
 import React from "react";
 import './Search.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faUserLarge, faChevronDown, faCircleQuestion, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Search.module.css";
 import jumiaImage from "../../assets/navbar/jumiaBlack.jpeg";
+
+
+
+
+
 
 function Search() {
   return (
@@ -24,6 +29,20 @@ function Search() {
         <div className={styles.lowerSearch}>
           <button>SEARCH</button>
           <div className={styles.account}>
+          <FontAwesomeIcon icon={faUserLarge} />
+          Account 
+          <FontAwesomeIcon icon={faChevronDown} />
+          </div>
+
+          <div className={styles.help}>
+          <FontAwesomeIcon icon={faCircleQuestion} />
+          Help
+          <FontAwesomeIcon icon={faChevronDown} />
+          </div>
+
+          <div className={styles.cart}>
+          <FontAwesomeIcon icon={faCartShopping} />
+          Cart
 
           </div>
 
