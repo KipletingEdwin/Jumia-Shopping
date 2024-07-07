@@ -1,8 +1,58 @@
-
+.container{
+    display: flex;
+    flex-direction: column;
+}
 
 .delivery{
     background-color: #623187;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.delivery img{
+    height: 50px;
+}
+
+.sell{
+    background-color: #f1f1f2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sellSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sellSection:hover{
+    cursor: pointer;
+}
+
+.sellSection a{
+    color: #fe9900;
+    margin-left: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.sellSection a:hover{
+    text-decoration: underline;
+}
+
+.sellSection img{
+    height: 15px;
+}
+
+.jumia{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumia img{
+    height: 20px;
 }
