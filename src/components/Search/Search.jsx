@@ -6,10 +6,6 @@ import styles from "./Search.module.css";
 import jumiaImage from "../../assets/navbar/jumiaBlack.jpeg";
 
 
-
-
-
-
 function Search() {
   return (
     <section className={styles.container}>
@@ -19,7 +15,7 @@ function Search() {
         </div>
 
         <div className={styles.search}>
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} className={styles.faMagnifyingGlass} />
           <input
             type="text"
             placeholder="Search products,brands and categories"
