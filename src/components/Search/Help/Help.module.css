@@ -14,3 +14,23 @@
 .help:hover{
     color: #f68b1e;
 }
+
+.helpContainer{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    background-color: black;
+    padding: 3px 0px;
+}
+
+.itemButton{
+    background-color: #f68b1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    color: white;
+}
