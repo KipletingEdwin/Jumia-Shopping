@@ -3,26 +3,25 @@ import "./Search.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
-  faUserLarge,
+  // faUserLarge,
   faChevronDown,
   faCircleQuestion,
   faCartShopping,
   faChevronUp,
-  faBagShopping,
-  faHeart
+  // faBagShopping,
+  // faHeart
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Search.module.css";
 import jumiaImage from "../../assets/navbar/jumiaBlack.jpeg";
-
-
+import LowerSection from "../LowerSection/LowerSection";
 
 function Search() {
-  const [isChevronUp, setIsChevronUp] = useState(false);
+  // const [isChevronUp, setIsChevronUp] = useState(false);
   const [isHelpChevronUp, setIsHelpChevronUp] = useState(false);
 
-  const toggleChevron = () => {
-    setIsChevronUp(!isChevronUp);
-  };
+  // const toggleChevron = () => {
+  //   setIsChevronUp(!isChevronUp);
+  // };
 
   const toggleHelpChevron = () => {
     setIsHelpChevronUp(!isHelpChevronUp);
@@ -46,44 +45,12 @@ function Search() {
             name="search"
           />
         </div>
+
         <div className={styles.lowerSearch}>
           <button className={styles.searchButton}>SEARCH</button>
-          <div className={styles.account} onClick={toggleChevron}>
-            <FontAwesomeIcon
-              icon={faUserLarge}
-              className={styles.faUserLarge}
-            />
-            <p> Account </p>
-            <FontAwesomeIcon icon={isChevronUp ? faChevronDown : faChevronUp    } />
-            { !isChevronUp && (
-              <div className={styles.accountAdditionalContent}>
-                <div className={styles.signInButton}>
-                  <button className={styles.signIn}>SIGN IN</button>
-                </div>
-                <div className={styles.accountLowerSection}> 
-                  <div className={styles.myAccount}>
-                  <FontAwesomeIcon
-                      icon={faUserLarge}
-                  />
-                    <p>My Account</p>
-                  </div>
+          <LowerSection />
 
-                  <div className={styles.myAccount}> 
-                  <FontAwesomeIcon icon={faBagShopping} />
-                    <p>Orders</p>
-                  </div>
 
-                  <div className={styles.myAccount}> 
-                  <FontAwesomeIcon icon={faHeart} />
-                    <p>Saved Items</p>
-                  </div>
-
-                </div>
-              </div>
-            )
-              
-            }
-          </div>
 
           <div className={styles.help} onClick={toggleHelpChevron}>
             <FontAwesomeIcon icon={faCircleQuestion} />
@@ -93,6 +60,9 @@ function Search() {
               icon={isHelpChevronUp ? faChevronDown : faChevronUp}
             />
           </div>
+
+
+          
 
           <div className={styles.cart}>
             <FontAwesomeIcon icon={faCartShopping} />

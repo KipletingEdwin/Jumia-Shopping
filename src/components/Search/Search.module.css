@@ -61,20 +61,6 @@
     color: white;
 }
 
-.account{
-    /* background-color: green; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    margin-left: 10px;
-}
-
-.account:hover{
-    color: #f68b1e;
-}
-
-
 .help{
     display: flex;
     align-items: center;
@@ -102,42 +88,5 @@
     color: #f68b1e;
 }
 
-.accountAdditionalContent{
-    /* background-color: #ffffff; */
-    background-color: green;
-    position: absolute;
-    margin-top: 10%;
-    padding: 10px;
-    z-index: 3;
-}
 
-.signInButton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: orangered;
-    width: 100%;
-}
 
-.signInButton button{
-    background-color: #f68b1e;
-    color: white;
-    padding: 5px 30px;
-    margin-top: 2%;
-    font-size: 14px;
-    font-weight: 300;
-    border-radius: 3px;
-    border: none;
-}
-
-.myAccount{
-    display: flex;
-    flex-direction: row;
-    background-color: red;
-    margin: 5px 0px;
-    padding: 5px;
-}
-
-.myAccount p{
-    padding-left: 10px;
-}
