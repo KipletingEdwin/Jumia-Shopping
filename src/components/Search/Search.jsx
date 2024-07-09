@@ -3,29 +3,15 @@ import "./Search.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
-  // faUserLarge,
-  faChevronDown,
-  faCircleQuestion,
   faCartShopping,
-  faChevronUp,
-  // faBagShopping,
-  // faHeart
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Search.module.css";
 import jumiaImage from "../../assets/navbar/jumiaBlack.jpeg";
 import LowerSection from "../LowerSection/LowerSection";
+import Help from "./Help/Help";
 
 function Search() {
-  // const [isChevronUp, setIsChevronUp] = useState(false);
-  const [isHelpChevronUp, setIsHelpChevronUp] = useState(false);
 
-  // const toggleChevron = () => {
-  //   setIsChevronUp(!isChevronUp);
-  // };
-
-  const toggleHelpChevron = () => {
-    setIsHelpChevronUp(!isHelpChevronUp);
-  };
 
   return (
     <section className={styles.container}>
@@ -49,20 +35,7 @@ function Search() {
         <div className={styles.lowerSearch}>
           <button className={styles.searchButton}>SEARCH</button>
           <LowerSection />
-
-
-
-          <div className={styles.help} onClick={toggleHelpChevron}>
-            <FontAwesomeIcon icon={faCircleQuestion} />
-            <p> Help</p>
-
-            <FontAwesomeIcon
-              icon={isHelpChevronUp ? faChevronDown : faChevronUp}
-            />
-          </div>
-
-
-          
+          <Help />
 
           <div className={styles.cart}>
             <FontAwesomeIcon icon={faCartShopping} />

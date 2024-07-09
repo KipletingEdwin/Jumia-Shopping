@@ -1,0 +1,16 @@
+
+
+
+.help{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    /* background-color: blue; */
+    padding: 5px;
+    margin: 5px;
+}
+
+.help:hover{
+    color: #f68b1e;
+}
